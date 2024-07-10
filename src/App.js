@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import MaterialTable from 'material-table'
-import GetAppIcon from '@material-ui/icons/GetApp';
+import MaterialTable from 'material-table';
 import AddIcon from '@material-ui/icons/Add';
 
 function App() {
@@ -27,8 +26,8 @@ function App() {
   ]
   return (
     <div className="App">
-      <h1 align="center">React-App</h1>
-      <h4 align='center'>Crash Course on Material Table </h4>
+      <h1 align="center">Directory app</h1>
+      <h4 align='center'>Material Table </h4>
 
       <MaterialTable columns={columns} data={tableData}
         editable={{
@@ -70,7 +69,7 @@ function App() {
         }}
         title="Student Information"
         icons={{ Add: () => <AddIcon /> }} />
-        <h2>hh</h2>
+      
     </div>
   );
 }
